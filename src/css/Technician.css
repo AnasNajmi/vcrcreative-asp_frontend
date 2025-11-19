@@ -1,0 +1,132 @@
+.scheduleBtn {
+  border: 2px solid #28cdff !important;
+  border-radius: 20px !important;
+  color: #28cdff !important;
+  padding: 7px 30px !important;
+  font-size: 18px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  text-align: center;
+  white-space: nowrap;
+}
+.scheduleBtn:hover {
+  background-color: #28cdff !important;
+  color: white !important;
+}
+.flexitem {
+  margin-right: 15px;
+}
+.spaceCol {
+  width: 40% !important;
+}
+.technicianName {
+  font-size: 22px !important;
+  font-family: 'HelveticaBold' !important;
+}
+.date-div .react-datepicker-wrapper {
+  border: 1px solid #cdeefc !important;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 20px;
+  padding: 2%;
+  text-align: right;
+}
+.scheduleTech {
+  background-color: #f3fdff;
+  border-radius: 20px;
+  text-align: center;
+  height: 320px;
+  margin-top: 40px;
+  margin-right: 20px;
+  padding: 30px 0px;
+}
+.techName {
+  font-size: 25px;
+  color: #28cdff;
+  margin-bottom: 8px;
+}
+.techNum {
+  font-size: 20px;
+  color: #8c8c8c;
+  font-weight: 700;
+}
+.scheduleCard {
+  width: 54%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.date-filter-div .react-datepicker-wrapper {
+  border: 2px solid #28cdff !important;
+  margin: auto !important;
+  border-radius: 22px;
+  padding: 15px 40px;
+  text-align: left !important;
+}
+.scehduleTableRow {
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  border-left: 9px solid #28cdff;
+}
+.technicianServiceType {
+  font-size: 22px !important;
+  font-family: 'HelveticaBold' !important;
+  color: #28cdff !important;
+}
+
+.scehduleTableBreakRow {
+  margin-bottom: 20px;
+  background-color: #f3fdff;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  border-left: 9px solid #8c8c8c;
+}
+
+.technicianBreakType {
+  font-size: 22px !important;
+  font-family: 'HelveticaBold' !important;
+  color: #8c8c8c !important;
+}
+
+.scehduleTableDrivingRow {
+  margin-bottom: 20px;
+  background-color: #f3fdff;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  border-left: 9px solid #28cdff;
+}
+
+.date-filter-div
+  .react-datepicker-wrapper
+  .react-datepicker__input-container
+  input {
+  color: #28cdff !important;
+  text-align: left !important;
+  width: 174px !important;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1919px) {
+  .spaceCol {
+    width: auto !important;
+  }
+  .technicianName {
+    font-size: 17px !important;
+  }
+  .scheduleBtn {
+    font-size: 14px !important;
+  }
+  .scheduleCard {
+    width: 57%;
+  }
+  .scheduleTech {
+    height: 300px;
+    margin-top: 20px;
+  }
+}

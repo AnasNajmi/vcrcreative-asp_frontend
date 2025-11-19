@@ -1,0 +1,24 @@
+.CheckListBtn {
+  background-color: #28cdff !important;
+  border-radius: 25px !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  padding: 3% !important;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1919px) {
+  .CheckListBtn {
+    padding: 3% 0% 3% 0% !important;
+    font-size: 15px !important;
+    font-family: 'HelveticaMedium' !important;
+  }
+}
+
+@media only screen and (min-width: 1536px) and (max-width: 1919px) {
+  .CheckList {
+    padding: 2% 4% 0% 5% !important;
+  }
+}

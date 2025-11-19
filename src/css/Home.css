@@ -1,0 +1,445 @@
+.bgImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#heroSection {
+  position: relative;
+}
+
+.imgTxt {
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 130px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contentOnImg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Helvetica Neue', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.vl {
+  border-left: 4px solid #cdeefc;
+  height: 159px;
+  margin: 3%;
+  border-radius: 100px;
+}
+
+.txtOnImg {
+  font-weight: 700 !important;
+  font-size: 45px;
+  line-height: 1.4;
+  width: 19%;
+  font-family: 'HelveticaBold';
+}
+
+.logoOnImg {
+  width: 418px;
+}
+
+.descriptionOnImg {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.getStartedBtn {
+  background: #28cdff !important;
+  font-size: 16px !important;
+  border-radius: 14px !important;
+  text-transform: none !important;
+  padding: 10px 36px !important;
+  cursor: pointer !important;
+  margin-left: 2% !important;
+  font-family: 'HelveticaBold' !important;
+}
+
+.descriptionTxt {
+  font-family: 'Helvetica Neue';
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0 25%;
+  padding-bottom: 3%;
+  width: 100%;
+}
+
+.mouseImg {
+  position: absolute;
+  bottom: 10%;
+  animation: vertical-shaking 1.3s infinite;
+  left: 49%;
+  /* transform: translateX(-50%); */
+  cursor: pointer;
+  z-index: 1;
+}
+
+#howItWorkSection,
+#howItWorkSectionCol2 {
+  padding-right: 7%;
+}
+
+.howItWorkSectionCol2 {
+  padding-right: 25%;
+  margin-top: 12%;
+}
+
+#howItWorkCol2 {
+  margin-top: 47%;
+}
+
+.howItWorkSection {
+  background: url('../assets/images/howitworksBG.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  height: 1249px;
+  position: relative;
+  top: 63px;
+  margin-top: -75px;
+}
+
+.numberedBox {
+  font-size: 50px;
+  font-weight: 700;
+  color: #28cdff;
+  background-color: #c8f3ff;
+  text-align: center;
+  width: 89px;
+  padding: 2%;
+  border-radius: 13px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.firstNumberedBox {
+  font-size: 50px;
+  font-weight: 700;
+  color: #28cdff;
+  background-color: #ffffff;
+  text-align: center;
+  width: 89px;
+  padding: 2%;
+  border-radius: 13px;
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+  top: -15%;
+  z-index: 5;
+}
+
+.boxHeading {
+  font-size: 24px;
+  font-family: 'Helvetica Neue' !important;
+  font-weight: 700 !important;
+}
+
+.boxContent {
+  font-size: 22px;
+  font-weight: 400;
+  color: #a0a0a0;
+  text-align: justify;
+}
+
+.mainHeading {
+  color: #28cdff;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: 'Economica', sans-serif;
+  padding: 15% 0 5% 15%;
+}
+
+.cardContent {
+  font-size: 22px;
+}
+
+.leftBox {
+  width: 30%;
+  background-color: #28cdff;
+  color: white;
+  margin-left: auto !important;
+  padding: 9% 4%;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  top: 3.5%;
+  z-index: 1;
+
+  right: 20% !important;
+}
+
+.card1Heading {
+  font-size: 24px;
+  font-weight: 700;
+  /* letter-spacing: 1px; */
+  font-family: 'Helvetica Neue' !important;
+}
+
+.leftBoxContent {
+  font-size: 22px;
+  font-weight: 400;
+  color: #8c8c8c;
+  padding-left: 15%;
+}
+
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  75% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ===========================MEDIA QUERIES========================= */
+/* MEDIA QUERY FROM 992 UP TO 1380 FOR HERO SECTION */
+@media only screen and (min-width: 992px) and (max-width: 1380px) {
+  .imgTxt {
+    top: 70px;
+  }
+
+  .txtOnImg {
+    font-size: 32px;
+  }
+
+  .logoOnImg {
+    width: 324px;
+  }
+
+  .mouseImg {
+    bottom: 5%;
+    left: 48%;
+  }
+
+  .descriptionTxt {
+    padding: 0px 26% 50px 26%;
+  }
+}
+
+/* Small devices (portrait tablets and  phones, 600px and up) */
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+  .logoOnImg {
+    width: 244px;
+  }
+
+  .txtOnImg {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.1;
+    width: 51%;
+  }
+
+  .descriptionTxt {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 6%;
+  }
+
+  .getStartedBtn {
+    padding: 8px 17px !important;
+    font-size: 12px !important;
+    margin-top: 13% !important;
+  }
+
+  .mouseImg {
+    display: none;
+  }
+
+  .vl {
+    height: 77px;
+    margin: 2%;
+  }
+
+  .howItWorkSection {
+    background: none;
+    /* background-color: aliceblue; */
+  }
+
+  .howItWorkSectionCol2 {
+    padding: 0;
+  }
+
+  #howItWorkSection,
+  #howItWorkSectionCol2 {
+    margin: auto;
+    padding: 7%;
+  }
+
+  .numberedBox,
+  .firstNumberedBox {
+    margin: auto;
+  }
+
+  .card1Heading {
+    color: black;
+  }
+
+  .leftBox {
+    width: auto;
+    background-color: white;
+    font-size: 22px;
+    font-weight: 400;
+    color: #a0a0a0;
+    margin: auto;
+    margin-left: none !important;
+    padding: 0;
+    border-radius: none;
+    position: unset;
+  }
+
+  .firstNumberedBox {
+    position: unset;
+    color: #28cdff;
+    background-color: #c8f3ff;
+    width: 89px;
+    padding: 2%;
+    border-radius: 13px;
+    margin-bottom: 6%;
+    margin-top: 15%;
+  }
+
+  .mainHeading {
+    padding: 0 !important;
+    text-align: center;
+    margin: auto;
+  }
+
+  .leftBoxContent {
+    padding-left: 0 !important;
+    padding-top: 4%;
+  }
+
+  .howItWorkSectionCol2,
+  #howItWorkCol2 {
+    margin-top: 0;
+  }
+
+  .boxContent {
+    margin-bottom: 10%;
+  }
+
+  .bgImg {
+    margin-top: -19px;
+  }
+
+  .mainHeading {
+    font-size: 63px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txtOnImg {
+    width: 35%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1451px) and (max-width: 1551px) {
+  #howItWorkSection,
+  #howItWorkSectionCol2 {
+    padding-top: 3.5% !important;
+  }
+}
+
+@media only screen and (min-width: 1555px) {
+  .howItWorkSection {
+    margin-top: -65px;
+  }
+
+  .leftBox {
+    top: 6.5%;
+  }
+}
+
+@media only screen and (min-width: 1620px) {
+  #howItWorkSection,
+  #howItWorkSectionCol2 {
+    padding-top: 0.5% !important;
+  }
+
+  .howItWorkSection {
+    margin-top: -133px !important;
+  }
+}
+
+@media only screen and (min-width: 1390px) and (max-width: 1450px) {
+  #howItWorkSection,
+  #howItWorkSectionCol2 {
+    padding-top: 7.5% !important;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1620px) {
+  #howItWorkSection,
+  #howItWorkSectionCol2 {
+    padding-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1919px) {
+  .howItWorkSection {
+    height: 1060px;
+    position: relative;
+    top: 47px;
+    margin-top: -194px;
+  }
+
+  #howItWorkSection,
+  #howItWorkSectionCol2 {
+    padding-top: 11.5%;
+  }
+
+  .footerSection {
+    height: 398px !important;
+  }
+
+  .boxHeading {
+    font-size: 18px;
+  }
+
+  .leftBoxContent,
+  .boxContent {
+    font-size: 18px;
+  }
+
+  .card1Heading,
+  .cardContent {
+    font-size: 17px;
+  }
+
+  .descriptionOnImg {
+    margin-top: 0 !important;
+  }
+
+  .getStartedBtn {
+    margin-left: 4% !important;
+  }
+
+  .txtOnImg {
+    width: 23%;
+  }
+  .bgImg {
+    object-fit: none;
+  }
+}

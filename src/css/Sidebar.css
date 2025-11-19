@@ -1,0 +1,218 @@
+.profileDiv {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 16% 0;
+}
+
+.sidebarTxt {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8c8c8c;
+  margin-bottom: 9%;
+  font-family: 'Helvetica Neue';
+}
+
+.fullListItemAdmin {
+  margin-bottom: 8%;
+  padding: 2%;
+  background-color: #f3fdff;
+  border-radius: 20px;
+  height: 10% !important;
+}
+
+.listItem {
+  font-weight: 500;
+  font-size: 18px;
+  color: #28cdff;
+  width: inherit;
+}
+
+.listItem > span {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'HelveticaMedium';
+}
+
+.name {
+  font-size: 20px;
+  color: #28cdff;
+  font-family: 'HelveticaBold';
+}
+
+/*====================================== styling superadmin menu items=================== */
+.fullListItem {
+  background-color: #f3fdff;
+  margin-bottom: 9%;
+  border-radius: 20px;
+}
+
+.active .fullListItem .listItem {
+  color: #fff;
+}
+
+.fullListItem:hover .icon {
+  filter: brightness(0) invert(1);
+}
+
+.active .fullListItem {
+  color: white !important;
+  background-color: #28cdff;
+}
+
+.active .fullListItem .icon {
+  filter: brightness(0) invert(1);
+}
+
+/* ======================================end of styling superadmin menu items=================== */
+
+/*===================================styling admin menu items==================================== */
+.fullListItemAdmin:hover {
+  border-radius: 20px !important;
+  background-color: #28cdff;
+  color: #fff;
+}
+.activeDropdown {
+  border-radius: 20px !important;
+  background-color: #28cdff;
+  color: #fff;
+}
+
+.activeDropdown .listItem .listItem {
+  color: #fff;
+}
+.activeDropdown .listItem .T-btn .arrow-icon-up {
+  filter: brightness(0) invert(1);
+}
+.activeDropdown .s-vl {
+  border-left: 2px solid white;
+}
+.activeDropdown .setting-vl {
+  border-left: 2px solid white;
+}
+.activeDropdown .adminServiceDropdown {
+  color: #cdeefc;
+}
+.activeDropdown .listItem .M-icon .icon {
+  filter: brightness(0) invert(1);
+}
+
+.fullListItemAdmin:hover .s-vl {
+  border-left: 2px solid white;
+}
+.fullListItemAdmin:hover .setting-vl {
+  border-left: 2px solid white;
+}
+.fullListItemAdmin:hover .adminServiceDropdown {
+  color: #cdeefc;
+}
+.adminServiceDropdown {
+  margin: auto;
+  color: #8c8c8c;
+  font-size: 16px;
+  padding-bottom: 10%;
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+}
+.adminServiceDropdown:hover {
+  color: white !important;
+}
+.active .adminServiceDropdown {
+  color: white !important;
+}
+
+/*====================================== end of styling admin menu items============================ */
+
+/* ======================================styling both admin/superadmin menu items=================== */
+.fullListItem:hover .listItem,
+.fullListItemAdmin:hover .listItem {
+  color: #fff;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+}
+
+.fullListItem:hover {
+  background-color: #28cdff;
+}
+
+.fullListItemAdmin:hover .listItem {
+  background-color: #28cdff;
+}
+
+.fullListItem:focus .icon,
+.fullListItemAdmin:focus .icon,
+.fullListItemAdmin:focus .arrow-icon-up {
+  color: white !important;
+  background-color: #28cdff;
+}
+
+/* .active.fullListItem .icon, */
+.fullListItemAdmin:hover .icon,
+.fullListItemAdmin:hover .arrow-icon-up {
+  filter: brightness(0) invert(1);
+}
+
+/* ===================end of styling both admin/superadmin menu items ===================*/
+
+.logoutBtn {
+  background-color: #f3fdff !important;
+  padding: 3% !important;
+  color: #8c8c8c !important;
+  border-radius: 15px !important;
+  margin-top: 4% !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  box-shadow: none !important;
+}
+
+.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+  border-radius: 20px !important;
+}
+
+.s-vl {
+  height: 116px;
+  margin-left: -30px !important;
+  border-left: 2px solid #28cdff;
+}
+.setting-vl {
+  height: 150px;
+  margin-left: -30px !important;
+  border-left: 2px solid #28cdff;
+}
+
+@media only screen and (max-width: 1680px) {
+  .s-vl {
+    margin-left: -43px !important;
+  }
+  .setting-vl {
+    margin-left: -35px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .css-1ip8xo1-MuiDrawer-docked .MuiDrawer-paper {
+    width: 25% !important;
+    padding: 0 2% !important;
+  }
+
+  .sidebarLogo {
+    margin: 0 auto;
+    flex-basis: 10%;
+  }
+
+  .sidebarLogoImg {
+    width: 100% !important;
+  }
+
+  .profileDiv {
+    width: 88%;
+  }
+
+  .s-vl {
+    margin-left: -70px !important;
+  }
+  .setting-vl {
+    margin-left: -70px !important;
+  }
+}

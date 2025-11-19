@@ -1,0 +1,97 @@
+.technicianCol {
+  background-color: #f3fdff;
+  border-radius: 50px;
+  width: 80%;
+  display: flex;
+  text-align: center;
+  padding: 2%;
+  padding-left: 5%;
+  justify-content: space-between !important;
+}
+
+.placename {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.tankname {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.serviceTableTxt {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #8c8c8c;
+}
+
+.serviceDetailBtn {
+  border: 2px solid #28cdff !important;
+  color: #28cdff !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  border-radius: 20px !important;
+  text-transform: none !important;
+  padding: 6px 37px !important;
+  cursor: pointer !important;
+  margin: 20px !important;
+  font-family: 'HelveticaMedium' !important;
+}
+
+.serviceDetailBtn:hover {
+  background-color: #28cdff !important;
+  color: white !important;
+}
+
+/* SERVICES HISTORY CSS START HERE */
+
+.serviceHistoryContainer {
+  padding: 6% 0% 4% 10%;
+}
+
+.serviceHistoryContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: flex-start;
+}
+.servicesTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.date-filter-div2 .react-datepicker-wrapper {
+  border: 2px solid #28cdff !important;
+  margin-top: 14px !important;
+  border-radius: 22px;
+  padding: 11px 50px;
+  text-align: left !important;
+}
+
+/* SERVICES HISTORY CSS END HERE */
+
+@media only screen and (min-width: 992px) and (max-width: 1919px) {
+  .technicianCol {
+    width: 100%;
+  }
+
+  .serviceTableTxt {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    color: #8c8c8c;
+  }
+
+  .placename {
+    font-size: 19px;
+    font-family: 'HelveticaBold';
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .placename {
+    font-size: 22px;
+    font-family: 'HelveticaBold';
+  }
+}

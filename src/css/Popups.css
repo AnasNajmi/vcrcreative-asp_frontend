@@ -1,0 +1,301 @@
+.hl-del {
+  position: relative;
+  border-bottom: 3px solid #cdeefc;
+  opacity: 10;
+  width: 84%;
+  margin: auto;
+}
+
+.hl-forget {
+  position: relative;
+  border-bottom: 2px solid #cdeefc;
+  opacity: 10;
+  width: 60%;
+  margin: auto;
+}
+
+.forgetPasswordPopup {
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow: hidden;
+}
+
+.closeBtn {
+  border: 2px solid #28cdff !important;
+  color: #28cdff !important;
+  font-size: 20px !important;
+  border-radius: 14px !important;
+  text-transform: none !important;
+  padding: 6px 30px !important;
+  cursor: pointer !important;
+  margin: 10px !important;
+  font-family: 'HelveticaMedium' !important;
+}
+
+.resetPasswordBtn {
+  background-color: #28cdff !important;
+  color: white !important;
+  font-size: 20px !important;
+  border-radius: 14px !important;
+  text-transform: none !important;
+  padding: 8px 30px !important;
+  cursor: pointer !important;
+  font-family: 'HelveticaMedium' !important;
+  box-shadow: none !important;
+}
+
+.closeBtn:hover {
+  background-color: #28cdff !important;
+  color: white !important;
+  font-family: 'HelveticaMedium' !important;
+}
+
+.enterEmailTxt {
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0.5% 0% 2% 0%;
+  cursor: pointer;
+}
+
+.clientPopupTxt {
+  color: #8c8c8c;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.delBtn {
+  background-color: #ff5151 !important;
+  color: white !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  border-radius: 14px !important;
+  text-transform: none !important;
+  padding: 7px 30px !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+.tankOptionBtns {
+  color: #8c8c8c !important;
+  background-color: white !important;
+  border: 2px solid #cdeefc !important;
+  font-size: 16px !important;
+  border-radius: 20px !important;
+  text-transform: none !important;
+  width: 17%;
+  padding: 9px !important;
+  cursor: pointer !important;
+  margin: 10px !important;
+  font-family: 'HelveticaMedium' !important;
+}
+
+.activeTankBtn {
+  background-color: #28cdff !important;
+  color: #202020 !important;
+  border: 2px solid #cdeefc !important;
+  font-size: 16px !important;
+  border-radius: 20px !important;
+  text-transform: none !important;
+  width: 17%;
+  padding: 9px !important;
+  cursor: pointer !important;
+  margin: 10px !important;
+  font-family: 'HelveticaMedium' !important;
+}
+
+.tankOptionBtns:hover {
+  background-color: #28cdff !important;
+  color: #202020 !important;
+  font-family: 'HelveticaMedium' !important;
+}
+
+.checkOptionBtns {
+  color: #8c8c8c !important;
+  background-color: white !important;
+  border: 2px solid #cdeefc !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  border-radius: 20px !important;
+  text-transform: none !important;
+  width: 24% !important;
+  padding: 9px !important;
+  cursor: pointer !important;
+  margin: 10px !important;
+}
+
+.activeCheckBtn {
+  background-color: #28cdff !important;
+  color: #202020 !important;
+  border: 2px solid #cdeefc !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  border-radius: 25px !important;
+  text-transform: none !important;
+  width: 24% !important;
+  padding: 9px !important;
+  cursor: pointer !important;
+  margin: 10px !important;
+}
+
+.checkOptionBtns:hover {
+  background-color: #28cdff !important;
+  color: #202020 !important;
+}
+
+.taskOptionBtns {
+  color: #8c8c8c !important;
+  background-color: white !important;
+  border: 1px solid #cdeefc !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  padding: 10px 30px !important;
+  border-radius: 20px !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+  margin: 16px 10px !important;
+  font-family: 'HelveticaMedium' !important;
+  box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+}
+
+.activeTaskBtn {
+  background-color: #28cdff !important;
+  color: #202020 !important;
+  border: 1px solid #cdeefc !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  border-radius: 20px !important;
+  padding: 10px 30px !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+  margin: 16px 10px !important;
+  font-family: 'HelveticaMedium' !important;
+  box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+}
+
+.taskOptionBtns:hover {
+  background-color: #28cdff !important;
+  color: #202020 !important;
+  box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+}
+
+.otherTaskBtn {
+  color: #8c8c8c !important;
+  background-color: white !important;
+  /* border: 2px solid #cdeefc !important; */
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  border-radius: 16px !important;
+  padding: 0px 12px !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+  margin: 17px 10px 13px 10px !important;
+  box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+}
+
+.activeOtherTaskBtn {
+  background-color: #28cdff !important;
+  color: #202020 !important;
+  /* border: 2px solid #cdeefc !important; */
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  padding: 0px !important;
+  border-radius: 16px !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+  margin: 10px !important;
+  box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+}
+
+.otherTaskBtn:hover {
+  background-color: #28cdff !important;
+  color: #202020 !important;
+  /* border: 2px solid #cdeefc !important; */
+  box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(169, 240, 242, 0.55);
+}
+
+.profileBtn {
+  border: 2px solid #cdeefc !important;
+  padding: 10px 20px !important;
+  text-align: left !important;
+  color: #8c8c8c !important;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  text-align: center !important;
+  margin: auto !important;
+}
+
+.parent-div .react-time-picker__wrapper {
+  border: 1px solid #cdeefc !important;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 20px;
+  padding: 7.5% 7.5% 7.5% 10.5%;
+  width: 150px;
+}
+
+.react-time-picker__inputGroup__input {
+  outline: none;
+}
+
+.parent-date-div .react-datepicker-wrapper {
+  border: 1px solid #cdeefc !important;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 20px;
+  padding: 4.2%;
+  text-align: left;
+  padding-left: 10% !important;
+  width: 280px;
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input {
+  border: none;
+  font-size: 15px;
+  width: 131px;
+  outline: none;
+}
+
+.disable {
+  background-color: #b6efff !important;
+  color: white !important;
+  font-size: 20px !important;
+  border-radius: 14px !important;
+  text-transform: none !important;
+  padding: 8px 30px !important;
+  cursor: pointer !important;
+  font-family: 'HelveticaMedium' !important;
+  box-shadow: none !important;
+}
+.detailTrue {
+  color: #28cdff;
+  font-size: 16px;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.detailFalse {
+  color: #ff5151;
+  font-size: 16px;
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.detailTrueB {
+  border: 1px solid #cdeefc;
+}
+
+.detailFalseB {
+  border: 1px solid #ff5151;
+}

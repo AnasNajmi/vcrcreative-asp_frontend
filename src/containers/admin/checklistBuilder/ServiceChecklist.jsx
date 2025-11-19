@@ -1,0 +1,215 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import { React, useState, useEffect } from 'react';
+import { styled } from '@mui/material/styles';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import Collapse from '@mui/material/Collapse';
+import edit from '../../../assets/images/Edit.svg';
+import deleteIcon from '../../../assets/images/Delete.svg';
+import dropdown from '../../../assets/images/Dropdown.svg';
+import AddCheck from './AddCheck';
+import DeletePopup from '../../../components/DeletePopup';
+
+const StyledTableCell = styled(TableCell)(() => ({
+  [`&.${tableCellClasses.body}`]: {
+    fontSize: 14,
+    padding: '1% 3.5%',
+    width: '100%',
+  },
+}));
+const StyledTableRow = styled(TableRow)(() => ({
+  '&:nth-of-type(even)': {
+    backgroundColor: '#F3FDFF',
+    width: '100%',
+  },
+  // hide last border
+  '&:last-child td, &:last-child th': {
+    borderBottom: '1px solid transparent',
+  },
+}));
+
+export default function ServiceChecklist({
+  checks,
+  getChecks,
+  type,
+  setType,
+}) {
+  const [del, setDel] = useState(false);
+  const [editing, setEditing] = useState(false);
+  const [check, setCheck] = useState('');
+  const [expanded, setExpanded] = useState(true);
+  const [toggleIcon, setToggleIcon] = useState(true);
+  const [disable, setDisable] = useState(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+    setToggleIcon(!toggleIcon);
+  };
+
+  useEffect(() => {
+    if (type === 'service') {
+      setExpanded(true);
+      setToggleIcon(true);
+    }
+    setType('');
+  }, [type]);
+
+  return (
+    <div
+      className="CheckList"
+      style={{ padding: '1% 3% 1% 1%', marginTop: '3%' }}
+    >
+      <TableContainer
+        component={Paper}
+        style={{
+          borderRadius: '20px',
+          maxHeight: '100%',
+          overflowX: 'hidden',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            padding: '0.5% 1.5%',
+          }}
+        >
+          <h1 className="thead">Service Tasklist</h1>
+          {toggleIcon ? (
+            <img
+              src={dropdown}
+              alt=""
+              style={{
+                marginRight: '2%',
+              }}
+              onClick={handleExpandClick}
+              role="presentation"
+            />
+          ) : (
+            <img
+              src={dropdown}
+              alt=""
+              style={{
+                marginRight: '2%',
+                transform: 'rotateX(180deg)',
+              }}
+              onClick={handleExpandClick}
+              role="presentation"
+            />
+          )}
+        </div>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <Table
+            sx={{
+              [`& .${tableCellClasses.root}`]: {
+                borderBottom: 'none',
+              },
+            }}
+            aria-label="customized table"
+          >
+            <TableBody>
+              {checks
+                ?.filter((_) => _.type === 'service')
+                .map((row) => (
+                  <StyledTableRow key={row.title}>
+                    <StyledTableCell
+                      align="left"
+                      className="tankInfo"
+                      sx={{ color: '#28cdff' }}
+                    >
+                      <p
+                        style={{
+                          color: '#28cdff',
+                          fontFamily: 'HelveticaBold',
+                        }}
+                      >
+                        {`${row.title}`}
+                      </p>
+                      <p
+                        style={{
+                          color: '#8C8C8C',
+                          fontSize: '16px',
+                          fontWeight: '400',
+                          lineHeight: '2',
+                        }}
+                      >
+                        {`${row.description || ''}`}
+                      </p>
+                    </StyledTableCell>
+
+                    <StyledTableCell
+                      align="right"
+                      sx={{
+                        paddingLeft: '2%',
+                        paddingRight: '2%',
+                      }}
+                    >
+                      <div
+                        style={{
+                          marginRight: '72px',
+                          display: 'flex',
+                          alignItems: 'center',
+                        }}
+                      >
+                        <img
+                          src={edit}
+                          alt=""
+                          className="editIcon"
+                          onClick={() => {
+                            setEditing(true);
+                            setCheck(row);
+                            setDisable(true);
+                          }}
+                          role="presentation"
+                        />
+
+                        <img
+                          style={{
+                            marginLeft: '10px',
+                          }}
+                          src={deleteIcon}
+                          className="deleteIcon"
+                          onClick={() => {
+                            setDel(true);
+                            setCheck(row);
+                          }}
+                          alt=""
+                          role="presentation"
+                        />
+                      </div>
+                    </StyledTableCell>
+                  </StyledTableRow>
+                ))}
+            </TableBody>
+          </Table>
+        </Collapse>
+      </TableContainer>
+
+      {editing && (
+        <AddCheck
+          open={editing}
+          setOpen={setEditing}
+          editing={editing}
+          check={check}
+          getChecks={getChecks}
+          disable={disable}
+          setDisable={setDisable}
+        />
+      )}
+      {del && (
+        <DeletePopup
+          open={del}
+          setOpen={setDel}
+          item={check}
+          txt="checklist"
+          getData={getChecks}
+        />
+      )}
+    </div>
+  );
+}

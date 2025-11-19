@@ -1,0 +1,106 @@
+.bg {
+  background: #d9f4ff;
+  text-align: right;
+  height: 100vh;
+  padding: 3% 4% 3% 0%;
+}
+
+.thead {
+  text-align: left;
+  padding: 22px;
+  color: #8c8c8c;
+  font-size: 24px;
+  font-family: 'HelveticaBold';
+}
+
+.editIcon {
+  margin-right: 6%;
+}
+
+.editIcon:hover,
+.deleteIcon:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.btnContainer {
+  width: 12%;
+  position: absolute;
+  z-index: 3;
+  bottom: 6.6%;
+  right: 14px;
+  overflow: hidden;
+}
+
+.safariMarginClass {
+  /* using vw to keep the spacing same on safari as well as on chrome otherwis it was not fixed */
+  padding-left: 2vw !important;
+  /* padding-right: .5vw !important;  */
+}
+
+.addAdminBtn {
+  background-color: #28cdff !important;
+  border-radius: 25px !important;
+  padding: 3% !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (min-width: 1536px) and (max-width: 1919px) {
+  .bg {
+    padding: 3% 4% 3% 5%;
+  }
+
+  .serviceCheckList {
+    padding: 3% 4% 3% 5% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1919px) {
+  .imgNameCombo {
+    margin-right: 20px !important;
+  }
+
+  .addAdminBtn {
+    padding: 4% 2% 4% 3% !important;
+    font-size: 16px !important;
+    font-family: 'HelveticaMedium' !important;
+  }
+
+  .admintxt {
+    font-size: 17px !important;
+    font-family: 'HelveticaBold' !important;
+    width: fit-content;
+  }
+}
+
+.adminTextAndImage {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1700px) {
+  .bg {
+    padding: 3% 3% 3% 2%;
+  }
+
+  .admintxt {
+    font-size: 22px;
+  }
+
+  .adminTextAndImage {
+    gap: 36px;
+  }
+
+  .admintxt {
+    font-family: 'HelveticaBold' !important;
+  }
+
+  .addAdminBtn {
+    font-size: 20px !important;
+  }
+}

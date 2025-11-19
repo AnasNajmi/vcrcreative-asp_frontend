@@ -1,0 +1,216 @@
+.loginPg {
+  background-image: url('../assets/images/BGlogin.svg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.logoLogin {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  top: 80px;
+}
+
+.loginFirstSection {
+  height: 490px;
+  text-align: center;
+}
+
+.loginFormSection {
+  margin-top: 90px;
+  width: 100%;
+}
+
+.signInTxt {
+  color: #28cdff;
+  font-size: 30px;
+}
+
+.signInBtn {
+  background-color: #28cdff !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  border-radius: 14px !important;
+  text-transform: none !important;
+  padding: 10px 36px !important;
+  cursor: pointer !important;
+  font-family: 'Helvetica Neue' !important;
+  position: relative;
+}
+
+.forgetPasswordTxt {
+  text-align: right;
+  color: #8c8c8c;
+  font-size: 20px;
+  font-weight: 400 !important;
+  padding: 2% 0;
+  cursor: pointer;
+}
+
+.loginClearIcon {
+  position: absolute;
+  z-index: 1300;
+  right: 92px;
+  top: 34px;
+  color: white;
+  height: 2em !important;
+  width: 2em !important;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1600px) {
+  .loginFirstSection {
+    height: 490px !important;
+  }
+
+  .logoLogin {
+    top: 130px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .lgForm {
+    text-align: center;
+    padding: 0% 2%;
+    margin-left: 30%;
+    margin-top: -6%;
+    width: 10% !important;
+    display: flex;
+    flex-wrap: wrap !important;
+  }
+
+  .emailField {
+    width: 55%;
+  }
+
+  .passwordField {
+    width: 55%;
+  }
+
+  .forgetPassword {
+    margin-right: 46%;
+  }
+
+  .forgetPasswordTxt {
+    margin-right: 80% !important;
+    width: 100%;
+  }
+
+  .signInBtn {
+    font-size: 18px !important;
+    padding: 8px 30px !important;
+    margin-bottom: 80px !important;
+  }
+
+  .logoLogin {
+    top: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1919px) {
+  .loginPg {
+    height: 100vh;
+  }
+
+  .loginFormSection {
+    background-color: #f3fdff;
+  }
+
+  .loginFirstSection {
+    height: 433px;
+  }
+
+  .loginFormSection {
+    margin-top: 0;
+  }
+
+  .loginClearIcon {
+    height: 1.3em !important;
+    width: 1.3em !important;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+  .hl-forget {
+    width: 90%;
+  }
+
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    height: 60%;
+    max-width: 800px !important;
+  }
+
+  .resetPasswordBtn,
+  .closeBtn {
+    font-size: 12px !important;
+    padding: 8px !important;
+    width: 4%;
+    margin: 3% !important;
+  }
+
+  .enterEmailTxt {
+    font-size: 13px;
+  }
+
+  .resetPasswordBtn {
+    padding: 10px !important;
+  }
+
+  .forgetPasswordPopup {
+    overflow: auto;
+  }
+
+  .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    font-size: 1rem !important;
+  }
+
+  .loginClearIcon {
+    position: absolute;
+    right: 4%;
+    width: 1.2em !important;
+    top: 1%;
+  }
+
+  .loginPg {
+    background: none;
+    background-image: linear-gradient(
+      180deg,
+      #28cdff -20%,
+      aliceblue 29%
+    );
+  }
+
+  .loginFirstSection {
+    height: 17%;
+    background-color: #28cdff;
+    -webkit-border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    -moz-border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    background-image: linear-gradient(315deg, #28cdff 0%, black 74%);
+  }
+
+  .lgForm {
+    text-align: center;
+    padding: 0% 2%;
+    margin-left: 8%;
+  }
+
+  .forgetPasswordTxt {
+    padding: 6% 0%;
+    font-size: 20px;
+  }
+
+  .logoLogin {
+    width: 100%;
+    height: 83px;
+    position: relative;
+    top: 2%;
+  }
+
+  .signInBtn {
+    font-size: 17px !important;
+    padding: 8px 30px !important;
+    margin-bottom: 80px !important;
+  }
+}
