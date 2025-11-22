@@ -12,6 +12,9 @@ if (window.location.host === 'aquarium-admin-dev.falconweb.app') {
   baseUrl = 'https://aquarium-api-staging.falconweb.app/api';
 } else if (window.location.host === 'app.aquariumservicepro.com') {
   baseUrl = 'https://api.aquariumservicepro.com/api';
+} else if (window.location.host === 'aquariumfrontend-ki9rx.ondigitalocean.app') {
+  // DigitalOcean production frontend → DigitalOcean backend
+  baseUrl = 'https://aquariumbackend-angbg.ondigitalocean.app/api';
 }
 
 const genMediaUrl = (url) => {
