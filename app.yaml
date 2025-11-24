@@ -1,9 +1,0 @@
-name: aquarium-frontend
-static_sites:
-  - name: frontend
-    source_dir: /
-    output_dir: build
-    routes:
-      - path: /
-    catchall_document: index.html
-
